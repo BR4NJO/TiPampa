@@ -1,0 +1,248 @@
+/* Import de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Montserrat&display=swap');
+
+/* Déclaration des variables CSS */
+:root {
+    --main-color: #0088FF;
+    --marine-color: #0000FF;
+    --secondary-color: #FDB813;
+    --black-color: #000;
+    --white-color: #fff;
+}
+
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+/* Styles de base pour le HTML */
+html {
+    font-family: "Bellota";
+    font-size: 62.5%; /* 1rem = 10px */
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/*==================================NAVBAR==================================*/
+
+.header {
+    background: linear-gradient(var(--marine-color), var(--main-color));
+    fill: var(--marine-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 10rem;
+    cursor: pointer;
+}
+
+.header .navbar {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .navbar a {
+    margin: 0.5rem 1rem;
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.header .nav_btn {
+    margin: 0 1rem;
+    font-size: 4rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+/*==================================SLIDER INSTA==================================*/
+
+.image_container {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.image_container img {
+    margin-top: 10rem;
+    width: 22%;
+    height: auto;
+    border-radius: 8%;
+    margin-right: 2.5rem;
+}
+
+@media screen and (max-width: 600px) {
+    .image_container img {
+        width: 70%;
+        margin-top: 5rem;
+        margin-right: 0;
+    }
+
+    .image_container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*==================================BUTTON INSTA==================================*/
+
+.oval-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    border-radius: 30px; /* Pour créer une forme ovale */
+    background: linear-gradient(var(--marine-color), var(--main-color));
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 2s ;
+    margin: 3rem;
+    color: var(--white-color);
+}
+
+.oval-button:hover {
+    background: #0055a5; 
+}
+
+/*==================================FOOTER==================================*/
+
+.footer {
+    margin-top: 10rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(var(--marine-color), var(--main-color));
+    justify-content: space-between;
+}
+
+.footer .adress {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem; 
+}
+
+.footer .adress * {
+    margin: 0.5rem;
+}
+
+.contact_list {
+    list-style: none;
+}
+
+.footer_button {
+    color: var(--white-color);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.footer_button:hover {
+    color: var(--secondary-color);
+}
+
+.footer_link {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.footer_link:hover {
+    color: var(--secondary-color);
+}
+
+.footer_logo img {
+    height: 20rem;
+    cursor: pointer;
+}
+
+.subtext {
+    color: var(--white-color);
+    width: 100%;
+}
+
+.socials_list a {
+    font-size: 7rem;
+    color: var(--white-color);
+}
+
+.socials_list a:hover {
+    color: var(--secondary-color);
+}
+
+.socials_list img {
+    height: 5rem;
+}
+
+.border {
+    border-bottom: 1px solid var(--secondary-color);
+    width: 60%;
+    margin: 0 auto; 
+    justify-content: center;
+    text-align: center;
+    display: flex; 
+}
+
+/*==================================MENTIONS LEGALES==================================*/
+
+.legal {
+    margin-top: 2rem;
+    color: var(--white-color);
+    padding: 1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    overflow-x: auto; 
+    white-space: nowrap; 
+}
+
+.legal_content {
+    display: flex;
+    align-items: center;
+}
+
+.legal_content a {
+    margin: 0;
+    font-size: 2.2rem;
+    white-space: nowrap; 
+    color: var(--white-color);
+}
+
+.legal_content a:not(:last-child)::after {
+    content: " | "; /* Ajoute un séparateur entre chaque mention légale */
+}
+
+.legal_content a:hover {
+    color: var(--secondary-color);
+    border-bottom: .1rem solid var(--secondary-color);
+    padding-bottom: .5rem;
+}

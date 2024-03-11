@@ -1,0 +1,129 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/style/services.css')}}" alt="">
+{% endblock %}
+
+{% block title %}TiPampa{% endblock %}
+
+{% block services %}
+
+    <!--====================================TITRE SERVICES=======================================-->
+
+    <div class="services_title">
+        <h1 class="services_container">Les Services</h1>
+        <h2 class="services_bonus">Réservations 24h à l'avance</h2>
+    </div>
+
+
+    <!--====================================CONTENU SERVICES=======================================-->
+
+    <div class="services_content_container">
+
+        <!--====================================PANIER PETIT DEJEUNER=======================================-->
+
+        <section class="services_content">
+            <div class="services_content_title">
+                <h1 class="services_content_title">Petit-déjeuner</h1>
+                <h2 class="services_content_summary">Ce dernier comprends:</h2>
+            </div>
+
+            <div class="services_content_description">
+                <img src="{{ asset('assets/images/panier_ptit_dej.jpg')}}">
+                <ul class="services_content_list">
+                    <li class="services_content_feature">Viennoiseries</li>
+                    <li class="services_content_feature">Baguettes</li>
+                    <li class="services_content_feature">Beurre,confiture</li>
+                    <li class="services_content_feature">Boisson chaude (thé,tisane,café etc)</li>
+                    <li class="services_content_feature">Jus de fruit (en bouteille)</li>
+
+                </ul>
+            </div>
+
+
+            <div class="services_content_text">
+                <p class="services_content_lines">Vous pourrez déguster votre petit-déjeuner dans notre espace commun (le salon) ou bien directement à votre tipi (panier petit-déjeuner).</p>
+
+                <p class="services_content_lines">Vous pouvez envoyez un mail lors de votre séjour pour réserver un petit-déjeuner ou bien directement sur place auprès de vos hôtes.</p>
+            </div>
+
+            <div class="services_content_actions">
+
+                <p class="services_content_cost">12€ pour les adultes</p>
+                <p class="services_content_precision">(8€ pour les enfants de moins de 16 ans)</p>
+                <a href="mailto:aquasword60@icloud.com" class="services_content_button">Réservations</a>
+            </div>
+
+        </section>
+
+        <!--====================================PANIER GOURMAND=======================================-->
+
+        <section class="services_content">
+            <div class="services_content_title">
+                <h1 class="services_content_title">Panier Gourmand</h1>
+                <h2 class="services_content_summary">Ce dernier comprends:</h2>
+            </div>
+
+            <div class="services_content_description">
+                <img src="{{ asset('assets/images/panier_gourmand.jpg')}}">
+                <ul class="services_content_list">
+                    <li class="services_content_feature">Vin Rouge locale</li>
+                    <li class="services_content_feature">Successions de produits locausx</li>
+
+                </ul>
+            </div>
+
+
+            <div class="services_content_text">
+                <p class="services_content_lines">Il vous permettra de découvrir des produits bio et locaux.</p>
+
+                <p class="services_content_lines">Vous pouvez envoyez un mail lors de votre séjour pour réserver ce panier ou bien directement sur place auprès de vos hôtes.</p>
+            </div>
+
+            <div class="services_content_actions">
+
+                <p class="services_content_cost">40€ pour 4 personnes</p>
+                <a href="mailto:aquasword60@icloud.com" class="services_content_button">Réservations</a>
+            </div>
+
+        </section>
+
+        <!--====================================PANIER ROMANTIQUE=======================================-->
+
+        <section class="services_content">
+            <div class="services_content_title">
+                <h1 class="services_content_title">Panier Romantique</h1>
+                <h2 class="services_content_summary">Ce dernier comprends:</h2>
+            </div>
+
+            <div class="services_content_description">
+                <img src="{{ asset('assets/images/panier_romantique.jpg')}}">
+                <ul class="services_content_list">
+                    <li class="services_content_feature">Viennoiseries</li>
+                    <li class="services_content_feature">Baguettes</li>
+                    <li class="services_content_feature">Beurre,confiture</li>
+                    <li class="services_content_feature">Boisson chaude (thé,tisane,café etc)</li>
+                    <li class="services_content_feature">Jus de fruit (en bouteille)</li>
+
+                </ul>
+            </div>
+
+
+            <div class="services_content_text">
+                <p class="services_content_lines">Vous pourrez déguster votre petit-déjeuner dans notre espace commun (le salon) ou bien directement à votre tipi (panier petit-déjeuner).</p>
+
+                <p class="services_content_lines">Vous pouvez envoyez un mail lors de votre séjour pour réserver un petit-déjeuner ou bien directement sur place auprès de vos hôtes.</p>
+            </div>
+
+            <div class="services_content_actions">
+
+                <p class="services_content_cost">12€ pour les adultes</p>
+                <p class="services_content_precision">(8€ pour les enfants de moins de 16 ans)</p>
+                <a href="mailto:aquasword60@icloud.com" class="services_content_button">Réservations</a>
+            </div>
+
+        </section>
+
+    </div>
+
+{% endblock %}

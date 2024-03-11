@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Montserrat&display=swap');
+
+:root{
+    --main-color: #0088FF;
+    --marine-color: #0000FF;
+    --secondary-color: #FDB813;
+    --black-color: #000;
+    --white-color: #fff;
+    --sun-color: #ED5E28;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-family: "Bellota";
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+/*==================================TITRE ACCUEIL==================================*/
+
+.welcome_title{
+    position: relative;
+    margin: auto;
+    margin-top: 15rem;
+    text-align: center;
+    color: var(--sun-color);
+    font-size: 2.5rem;
+}
+
+.welcome_title h1{
+    font-weight: bold;
+    transition: color 1.5s ease-out;
+}
+
+.welcome_container:hover{
+    color: var(--secondary-color);
+}
+
+
+/*==================================CAROUSSEL ACCUEIL==================================*/
+
+.slideshow_container {
+    position: relative;
+    margin: auto;
+    margin-top: 2rem;
+    width: 80%;
+}
+  
+
+.slideshow_container img {
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+    border-radius: 3rem;
+}
+  
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active {
+    background-color: #717171;
+}
+  
+ 
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+  
+
+@media only screen and (max-width: 300px) {
+.text {font-size: 11px}
+  
+}
+  
+
+/*==================================BANNIERE ACCUEIL==================================*/
+
+.welcome_banner{
+    margin-top: 5rem;
+    background: linear-gradient(var(--marine-color), var(--main-color));
+    color: #fff; 
+    text-align: center;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around; 
+
+}
+
+
+.logo_banner{
+    margin: 0 1rem;
+    text-align: center; 
+    color: white; 
+    text-decoration: none;
+}
+
+.logo_banner img{
+    width: 55%;
+    height: 15vh
+}
+
+
+.text_banner {
+    margin-top: 2rem;
+    font-size: 2.1rem; 
+}
+
+
+/*==================================INTRO ACCUEIL==================================*/
+
+.part_intro{
+    margin-top: 3.5rem;
+    display: flex;
+    background: var(--secondary-color);
+    flex-wrap: wrap;
+}
+
+.image_intro{
+    flex: 1 1 45rem;
+    overflow: hidden;
+}
+
+.image_intro img{
+    width: 95%;
+    height: 100%;
+}
+
+.content_intro{
+    flex: 1 1 45rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.content_intro h1{
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--black-color);
+    width: 75%;
+}
+
+.content_intro p{
+    margin-top: 1.5rem;
+    font-size: 2.6rem;
+    color: var(--black-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.content_intro a{
+    margin-top: 1.5rem;
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+
+.content_intro a:hover{
+    color: var(--sun-color);
+}
+
+
+/*==================================INTRO ACCUEIL BIS==================================*/
+
+.part_intro_bis{
+    margin-top: 3.5rem;
+    display: flex;
+    background: var(--secondary-color);
+    flex-wrap: wrap;
+}
+
+.image_intro_bis{
+    flex: 1 1 45rem;
+    overflow: hidden;
+}
+
+.image_intro_bis img{
+    width: 100%;
+    height: 100%;
+}
+
+.content_intro_bis{
+    flex: 1 1 45rem;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+.content_intro_bis h1{
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--black-color);
+    width: 75%;
+}
+
+.content_intro_bis p{
+    margin-top: 1.5rem;
+    font-size: 2.6rem;
+    color: var(--black-color);
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.content_intro_bis a{
+    margin-top: 1.5rem;
+    font-size: 2.6rem;
+    color: var(--white-color);
+}
+
+.content_intro_bis a:hover{
+    color: var(--sun-color);
+}

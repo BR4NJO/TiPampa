@@ -1,0 +1,109 @@
+@import url('base.css');
+
+
+/*==================================TITRE TIPI==================================*/
+
+
+.common_title{
+    position: relative;
+    margin: auto;
+    margin-top: 15rem;
+    text-align: center;
+    color: var(--sun-color);
+    font-size: 2.5rem;
+}
+
+.common_title h1{
+    font-weight: bold;
+    transition: color 1.5s ease-out;
+}
+
+.common_container:hover{
+    color: var(--secondary-color);
+}
+
+
+
+
+/*==================================TITRE ESPACES COMMUNS==================================*/
+
+.common {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.welcome_common,
+.welcome_common_bis {
+    width: calc(50% - 10px); /* Ajustez la largeur comme nécessaire */
+    margin-bottom: 20px; /* Espacement entre les divs */
+    margin-top: 4rem;
+}
+
+.part_common,
+.part_common_bis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content_common,
+.content_common_bis {
+    margin-top: 10px; /* Espacement entre le texte et l'image */
+    width: 80%;
+    color: var(--marine-color);
+}
+
+
+.image_common img,
+.image_common_bis img{
+    border-radius: 5%;
+    width: 30vw;
+    height: 70rem;
+}
+
+
+
+/*==================================TIPI REDIRECTION TARIF==================================*/
+
+.button_common_rate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rate_common{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 30%;
+    border-radius: 30px; 
+    background: var(--secondary-color);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: 2s ;
+    margin: 3rem;
+    color: var(--black-color);
+}
+
+.rate_common:hover {
+    background: var(--sun-color);
+}
+
+.rate_common{
+    margin-top: 1.5rem;
+    font-size: 2.6rem;
+    color: var(--white-color);
+    width: 25vw;
+}
+
+.rate_common:hover{
+    color: var(--black-color);
+}

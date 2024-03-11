@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/style/contact.css')}}" alt="">
+{% endblock %}
+
+{% block title %}Contact{% endblock %}
+
+{% block contact %}
+
+    <section class="contact">
+        <div class="contact_title">
+            <h1 class="contact_container">Contactez-nous</h1>
+        </div>
+
+        <div class="contact_call">
+
+            <iframe class="contact_map" src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d92427.27297410923!2d-1.047759796161567!3d43.62002630793702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d43.624127099999995!2d-0.9657057!4m3!3m2!1d43.6211395!2d-0.9654499999999999!5e0!3m2!1sfr!2sfr!4v1709136061853!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            {# Intégration Formulaire #}
+
+            {{ form_start(form, {'attr': {'class': 'form_style'}}) }}
+                <h2>Vos informations</h2>
+
+                <div class="textBox">
+                    {{ form_row(form.name, {'attr': {'placeholder': 'Votre nom'}}) }}
+                </div>
+
+                <div class="textBox">
+                    {{ form_row(form.first_name, {'attr': {'placeholder': 'Votre prénom'}}) }}
+                </div>
+
+                <div class="textBox">
+                    {{ form_row(form.email, {'attr': {'placeholder': 'Votre mail'}}) }}
+                </div>
+
+                <div class="textBox">
+                    {{ form_row(form.phone, {'attr': {'placeholder': 'Votre téléphone'}}) }}
+                </div>
+
+                <div class="textBox">
+                    {{ form_row(form.message, {'attr': {'placeholder': 'Votre message...'}}) }}
+                </div>
+
+                <input type="submit" value="Envoyer votre message" class="btn_contact">
+
+            {{ form_end(form) }}
+        </div> 
+
+    </section>
+
+
+    
+
+{% endblock %}

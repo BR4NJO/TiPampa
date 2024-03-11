@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/style/teepee.css')}}" alt="">
+{% endblock %}
+
+
+{% block title %}Les Tipis{% endblock %}
+
+{% block teepee %}
+
+    <!--====================================TITRE TIPIS=======================================-->
+
+    <div class="teepee_title">
+        <h1 class="teepee_container">Les Tipis</h1>
+        <h2 class="teepee_bonus">Découvrez notre sélection atypique </h2>
+    </div>
+
+
+
+
+    <!--====================================PRESENTATION TIPIS=======================================-->
+    <div class="teepee">
+        <div class="welcome_teepee">
+            <div class="part_teepee">
+                <div class="image_teepee">
+                    <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-53_12.jpg')}}">
+                </div>
+
+                <div class="content_teepee">
+                    <h1>Tipi Double</h1>
+                    <p>Profitez de l'atmosphère intime et chaleureuse, avec un lit queen-size, un mobilier élégant et des détails soignés. Idéal pour les couples à la recherche d'une expérience glamping romantique sous les étoiles.</p>
+                    <div class="button_teepee">
+                        <a class="oval-teepee" href="{{ path('teepee_double') }}">
+                            Voir les détails
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="welcome_teepee_bis">
+            <div class="part_teepee_bis">
+                <div class="content_teepee_bis">
+                    <h1>Tipi Supérieur</h1>
+                    <p> Ce tipi spacieux est doté d'un lit king-size, d'un mobilier élégant, d'une terrasse privée et de commodités de luxe. 
+                    Profitez de vues imprenables sur la nature environnante tout en vous détendant dans le raffinement du glamping.</p>
+                    <div class="button_teepee">
+                        <a class="oval-teepee" href="{{ path('teepee_sup') }}">
+                            Voir les détails
+                        </a>
+                    </div>
+                </div>
+                <div class="image_teepee_bis">
+                    <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-53_11.jpg')}}">
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome_teepee">
+            <div class="part_teepee">
+                <div class="image_teepee">
+                    <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-53_10.jpg')}}">
+                </div>
+
+                <div class="content_teepee">
+                    <h1>Tipi Familial</h1>
+                    <p>Avec des lits superposés confortables, une atmosphère accueillante et des jeux de société, ce tipi offre une expérience glamping idéale pour les familles. Connectez-vous avec la nature tout en profitant du confort d'un chez-soi en plein air.</p>
+                    <div class="button_teepee">
+                        <a class="oval-teepee" href="{{ path('teepee_family') }}">
+                            Voir les détails
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="button_teepee_rate">
+            <a class="rate_teepee" href="{{ path('rate') }}">
+                Voir les tarifs
+            </a>
+        </div>
+    </div>
+    <!--====================================JS=======================================-->
+    <script src="{{ asset('assets/js/main.js')}}"></script>
+
+{% endblock %}

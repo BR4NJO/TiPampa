@@ -1,20 +1,111 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello DefaultController!{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/style/welcome.css')}}" alt="">
+{% endblock %}
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+{% block title %}TiPampa{% endblock %}
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'C:/Users/pc/TiPampa/src/Controller/DefaultController.php'|file_link(0) }}">src/Controller/DefaultController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'C:/Users/pc/TiPampa/templates/default/index.html.twig'|file_link(0) }}">templates/default/index.html.twig</a></code></li>
-    </ul>
-</div>
+{% block welcome %}
+
+    <!--====================================TITRE ACCUEIL=======================================-->
+
+    <div class="welcome_title">
+        <h1 class="welcome_container">Bienvenue dans les tipis des Landes</h1>
+    </div>
+
+
+    <!--====================================CAROUSSEL ACCUEIL=======================================-->
+
+    <div class="slideshow_container">
+
+        <div class="mySlides fade">
+            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_1.jpg')}}" >
+        </div>
+
+        <div class="mySlides fade">
+            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_4.jpg')}}">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_5.jpg')}}">
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+
+
+    <!--====================================BANNIERE ACCUEIL=======================================-->
+
+    <div class="welcome_banner">
+        <div class="part_banner">   
+            <a class="logo_banner" href="https://www.instagram.com/tipampa_40/" target="_blank">
+                <img src="{{ asset('assets/images/white-leaf-removebg.png')}}" class="leaf_banner">
+            </a>
+            <p class="text_banner">Un camp en pleine nature</p>
+        </div>
+        <div class="part_banner"> 
+            <a class="logo_banner" href="https://www.google.fr/maps/dir/Chem.+de+Tuyerot,+40350+Pouillon/Plage+de+la+Savane+(Santocha),+40130+Capbreton/@43.6156533,-1.1986583,12.17z/data=!4m15!4m14!1m5!1m1!1s0xd56bcb8fead0a39:0xc44a4ef93d2eee79!2m2!1d-0.9654528!2d43.621135!1m5!1m1!1s0xd515ca0478f4a35:0xeac5a819cad4e80b!2m2!1d-1.4451722!2d43.6463994!3e0!5i1?entry=ttu" target="_blank">
+                <img src="{{ asset('assets/images/logo_ocean-removebg.png')}}" class="ocean_banner">
+            </a>
+            <p class="text_banner">A 50 minutes de l'océan</p>
+        </div>
+        <div class="part_banner"> 
+            <a class="logo_banner" href="https://www.instagram.com/tipampa_40/" target="_blank">
+                <img src="{{ asset('assets/images/train-xxl.png')}}" class="train_banner">
+            </a>
+            <p class="text_banner">A 21 km de la gare de Dax</p>
+        </div>
+    </div>
+
+
+    <!--====================================PRESENTATION ACCUEIL=======================================-->
+    <div class="intro">
+        <div class="welcome_intro">
+            <div class="part_intro">
+                <div class="image_intro">
+                    <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-53_2.jpg')}}">
+                </div>
+
+                <div class="content_intro">
+                    <h1>Offrez vous une expérience mémorable sous les étoiles.</h1>
+                    <p>Que vous soyez un passionné de plein air ou un amateur de détente, notre camping offre l'espace parfait pour toutes les envies dans un cadre insolite et dépaysant.</p>
+                    <p>Explorez notre collection de tipis soigneusement conçus, offrant une immersion totale dans le glamping avec une touche d'originalité. Chacune est une oasis privée, combinant l'héritage traditionnel avec le confort moderne.</p>
+                    <a href="{{ path('teepee') }}" class="link_intro">
+                        Voir Les tipis 
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome_intro_bis">
+            <div class="part_intro_bis">
+                <div class="content_intro_bis">
+                    <h1> La fusion entre le confort luxueux et l'aventure en plein air au cœur d'une nature préservée.</h1>
+                    <p>Nos espaces communs sont conçus pour être des points de rencontre animés, où les histoires s'échangent, les rires résonnent et les souvenirs se créent. 
+                    Nous avons créé ces lieux pour que vous puissiez vivre une expérience communautaire tout en profitant du luxe de la nature.</p>
+                    <a href="{{ path('common') }}" class="link_intro">
+                        Voir les espaces communs 
+                    </a>
+                    <p>Découvrez nos tarifs de séjour qui incluent tout le confort nécessaire pour une escapade mémorable en plein air.</p>
+                    <a href="{{ path('rate') }}" class="link_intro">
+                        Voir les tarifs de séjours
+                    </a>
+                </div>
+                <div class="image_intro_bis">
+                    <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-53_2.jpg')}}" alt="Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--====================================JS=======================================-->
+    <script src="{{ asset('assets/js/main.js')}}"></script>
+
 {% endblock %}

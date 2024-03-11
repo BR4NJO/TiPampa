@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Montserrat&display=swap');
+
+:root{
+    --main-color: #0088FF;
+    --marine-color: #0000FF;
+    --secondary-color: #FDB813;
+    --black-color: #000;
+    --white-color: #fff;
+    --sun-color: #ED5E28;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-family: "Bellota";
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+
+/*==================================TITRE TIPI==================================*/
+
+
+.rate_title{
+    position: relative;
+    margin: auto;
+    margin-top: 15rem;
+    text-align: center;
+    color: var(--sun-color);
+    font-size: 2.5rem;
+}
+
+.rate_title h1{
+    font-weight: bold;
+    transition: color 1.5s ease-out;
+}
+
+.rate_container:hover{
+    color: var(--secondary-color);
+}
+

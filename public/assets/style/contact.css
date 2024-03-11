@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@300&family=Montserrat&display=swap');
+
+:root{
+    --main-color: #0088FF;
+    --marine-color: #0000FF;
+    --secondary-color: #FDB813;
+    --black-color: #000;
+    --white-color: #fff;
+    --sun-color: #ED5E28;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-family: "Bellota";
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+/*==================================TITRE CONTACT==================================*/
+
+
+.contact_title{
+    position: relative;
+    margin: auto;
+    margin-top: 15rem;
+    text-align: center;
+    color: var(--sun-color);
+    font-size: 2.5rem;
+}
+
+.contact_title h1{
+    font-weight: bold;
+    transition: color 1.5s ease-out;
+}
+
+.contact_container:hover{
+    color: var(--secondary-color);
+}
+
+/*==================================CONTENUE CONTACT==================================*/
+
+.contact_call{
+    margin-top: 5rem;
+    display: flex;
+    background: var(--secondary-color);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact_map{
+    width: 60%;
+    object-fit: cover;
+    height: auto;
+}
+
+
+.contact_call form{
+    flex:  1 1 45rem;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.contact_call h2{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: var(--black-color);
+}
+
+.textBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    background: var(--secondary-color);
+    border: var(--black-color);
+    border-radius: 20%;
+}
+
+.textBox input {
+    width: 20vw;
+    height: 10vh;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    text-transform: none;
+    background: none;
+    border: 2px solid black; 
+    border-radius: 3rem;
+}
+
+.textBox textarea{
+    width: 20vw;
+    height: 30vh;
+    padding: 2rem;
+    font-size: 1.5rem;
+    color: var(--black-color);
+    text-transform: none;
+    background: none;
+    border: 2px solid black; 
+    border-radius: 3rem;
+}
+
+.textBox label{
+    display: none;
+}
+
+.btn_contact{
+    margin-top: 1rem;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #000;
+    background: var(--secondary-color);
+    cursor: pointer;
+    transition: 0.5s;
+    border: 2px solid black; 
+    border-radius: 3rem;
+}
+
+.btn_contact:hover{
+    background: var(--sun-color);
+}
+

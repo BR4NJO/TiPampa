@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/style/common.css')}}" alt="">
+{% endblock %}
+
+{% block title %}Espaces Communs{% endblock %}
+
+{% block common %}
+
+    <!--====================================TITRE TIPIS=======================================-->
+
+    <div class="common_title">
+        <h1 class="common_container">Les Espaces Communs</h1>
+    </div>
+
+
+
+
+    <!--====================================PRESENTATION TIPIS=======================================-->
+    <div class="common">
+        <div class="welcome_common">
+            <div class="part_common">
+                <div class="image_common">
+                    <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_4.jpg')}}">
+                </div>
+
+                <div class="content_common">
+                    <h1>Tipi Double</h1>
+                    <p>Profitez de l'atmosphère intime et chaleureuse, avec un lit queen-size, un mobilier élégant et des détails soignés. Idéal pour les couples à la recherche d'une expérience glamping romantique sous les étoiles.</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="welcome_common_bis">
+            <div class="part_common_bis">
+                
+                <div class="image_common_bis">
+                    <img src="{{ asset('assets/images/471932294.jpg')}}">
+                </div>
+                <div class="content_common_bis">
+                    <h1>Douche</h1>
+                    <p> Ce tipi spacieux est doté d'un lit king-size, d'un mobilier élégant, d'une terrasse privée et de commodités de luxe. 
+                    Profitez de vues imprenables sur la nature environnante tout en vous détendant dans le raffinement du glamping.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome_common">
+            <div class="part_common">
+                <div class="image_common">
+                    <img src="{{ asset('assets/images/471932337.jpg')}}">
+                </div>
+
+                <div class="content_common">
+                    <h1>Tipi Familial</h1>
+                    <p>Avec des lits superposés confortables, une atmosphère accueillante et des jeux de société, ce tipi offre une expérience glamping idéale pour les familles. Connectez-vous avec la nature tout en profitant du confort d'un chez-soi en plein air.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome_common_bis">
+            <div class="part_common_bis">
+                
+                <div class="image_common_bis">
+                    <img src="{{ asset('assets/images/ti3.jpg')}}">
+                </div>
+                <div class="content_common_bis">
+                    <h1>Tipi Supérieur</h1>
+                    <p> Ce tipi spacieux est doté d'un lit king-size, d'un mobilier élégant, d'une terrasse privée et de commodités de luxe. 
+                    Profitez de vues imprenables sur la nature environnante tout en vous détendant dans le raffinement du glamping.</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+    </div>
+
+    <div class="button_common_rate">
+            <a class="rate_common" href="{{ path('rate') }}">
+                Voir les tarifs
+            </a>
+        </div>
+    <!--====================================JS=======================================-->
+    <script src="{{ asset('assets/js/main.js')}}"></script>
+
+{% endblock %}

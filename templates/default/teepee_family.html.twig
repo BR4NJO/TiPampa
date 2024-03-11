@@ -1,0 +1,122 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/style/teepee.css')}}" alt="">
+{% endblock %}
+
+
+{% block title %}Tipis Familiaux{% endblock %}
+
+
+{% block teepee_family %}
+    <div class="block_teepee_container">
+        <div class="block_teepee_image">
+            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-53_3.jpg')}}">
+        </div>
+
+        <div class="block_teepee_description">
+            <div class="block_teepee_description_first">
+                <h1>TIPI Familial (4 personnes)</h1>
+
+                <p>Profitez de l'atmosphère intime et chaleureuse, avec un lit queen-size, un mobilier élégant et des détails soignés. Idéal pour les couples à la recherche d'une expérience glamping romantique sous les étoiles.</p>
+
+                <a href="" download="inventaire.pdf">Inventaire ></a>
+
+                <div class="block_teepee_description_border"></div>
+
+                <div class="block_teepee_description_icon">
+                    <li>
+                        <i class="uil uil-celsius"  class="icon_teepee"></i>
+                        <p class="icon_text">Cuisine</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-bath" class="icon_teepee"></i>
+                        <p class="icon_text">Douche</p>
+                    </li>
+                    <li>
+                        <i class="uil uil-inbox" class="icon_teepee"></i>
+                        <p class="icon_text">Barbecue (espace commun)</p>
+                    </li>
+
+                </div>
+
+            </div>
+
+            <div class="block_teepee_description_second">
+                <p class="text_teepee_block_teepee">
+                    -Surface 3m²
+                </p>
+                <p class="text_teepee_block_teepee">
+                    -Dépaysement garanti avec cette tente spécial couple. Matériaux nobles (bois, toile, osier) et sens du détail se mêlent pour un design esthétique et naturel.
+                </p>
+                <p class="text_teepee_block_teepee">
+                    -Tente équipée sur plancher en bois comprenant un lit double 140×200, deux tables de chevet avec lampes. Espace rangement, malle en osier.
+                    
+                </p>
+                <p class="text_teepee_block_teepee">
+                    -Côté cuisine : glacière électrique, vaisselle, barbecue PrimaGrill, table de camping.
+                </p>
+                <p class="text_teepee_block_teepee">
+                    -Extérieur : terrasse en bois, 2 fauteuils pop-up, table de pique-nique en bois, parasol.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    
+    
+    
+    
+    
+    <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+        <input type="radio" name="slider" id="slide3">
+        <input type="radio" name="slider" id="slide4">
+        <div id="slides">
+            <div id="overflow">
+                <div class="inner">
+                    <div class="slide slide_1">
+                        
+                        <div class="slide-content">
+                            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-53_12.jpg')}}">
+                        </div>
+                    </div>
+                    <div class="slide slide_2">
+                        
+                        <div class="slide-content">
+                            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-53_11.jpg')}}">
+                        </div>
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_5.jpg')}}">
+                        </div>
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content">
+                            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_4.jpg')}}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+
+        <div id="bullets">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+        </div>
+    </div>
+
+
+{% endblock %}

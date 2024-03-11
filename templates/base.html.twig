@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>{% block title %}TiPampa{% endblock %}</title>
+        <link rel="icon" href="https://res.cloudinary.com/greengo-production/image/upload/f_auto,c_limit,w_1440,q_auto/pictures/accommmodation/ordered_images/tipampa.png">
+
+        <!--====================================ICONS=======================================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css">
+
+        <!--====================================STYLE=======================================-->
+        <link rel="stylesheet" href="{{ asset('assets/style/base.css')}}" alt="">
         {% block stylesheets %}
         {% endblock %}
 
@@ -11,6 +20,194 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <!--====================================NAVBAR=======================================-->
+        
+        <header class="header">
+            <a class="logo">
+                <img src="{{ asset('assets/images/tipampa_logo.png')}}" class="nav_logo" alt="">
+            </a>
+
+
+            <nav class="navbar">
+
+                <a href="{{ path('home') }}" class="nav_link">
+                    Accueil
+                </a>
+
+                <a href="{{ path('teepee') }}"  class="nav_link">
+                    Les Tipis
+                </a>
+
+                <a href="{{ path('common') }}"  class="nav_link">
+                    Espaces Communs
+                </a>
+
+                <a href="{{ path('activities') }}"  class="nav_link">
+                    Activités
+                </a>
+
+                <a href="{{ path('services') }}"  class="nav_link">
+                    Nos Services
+                </a>
+
+                <a href="{{ path('about') }}"  class="nav_link">
+                    A Propos
+                </a>
+
+                <a href="{{ path('rate') }}"  class="nav_link">
+                    Tarifs
+                </a>
+
+                <a href="{{ path('contact') }}"  class="nav_link">
+                    Nous Contacter
+                </a>
+
+                
+            </nav>
+
+            <div class="nav_btn">   
+                <i class="uil uil-sun" id="theme_button"></i>
+            </div>
+
+        </header>
+
+        {% block welcome %}
+
+        {% endblock %}
+
+        {% block mention %}
+
+        {% endblock %}
+
+        {% block teepee %}
+
+        {% endblock %}
+
+        {% block teepee_double %}
+
+        {% endblock %}
+
+        {% block teepee_sup %}
+
+        {% endblock %}
+
+        {% block teepee_family %}
+
+        {% endblock %}
+
+        {% block common %}
+
+        {% endblock %}
+
+        {% block activities %}
+
+        {% endblock %}
+
+        {% block services %}
+
+        {% endblock %}
+
+        {% block about %}
+
+        {% endblock %}
+
+        {% block faq %}
+
+        {% endblock %}
+
+        {% block rate %}
+
+        {% endblock %}
+
+        {% block contact %}
+
+        {% endblock %}
+
+
+        <!--====================================SLIDER INSTA=======================================-->
+        
+        <div class="image_container">
+            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_3.jpg')}}" alt="tippampa" id="slide">
+            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_2.jpg')}}" alt="tippampa" id="slide">
+            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_4.jpg')}}" alt="tippampa" id="slide">
+            <img src="{{ asset('assets/images/PHOTO-2024-01-16-16-05-54_1.jpg')}}" alt="tippampa" id="slide">
+        </div>
+
+        <div class="insta-button">
+            <a class="oval-button" href="https://www.instagram.com/tipampa_40/" target="_blank">
+               Plus d'images sur notre Instagram
+            </a>
+        </div>
+
+
+        <!--====================================FOOTER=======================================-->
+
+        <footer class="footer">
+            <div class="adress">
+                <div class="contact">
+                    <li class="contact_list">
+                        <i class="uil uil-location-point footer_button"></i>
+                        <a href="https://fr.mappy.com/poi/6481ced6e6203144d11ad5eb" class="footer_link">
+                            Chemin de Tuyerrot, 40350 Pouillon, France
+                        </a>
+                    </li>
+
+                    <li class="contact_list">
+                        <i class="uil uil-phone footer_button"></i>
+                        <a href="tel:0682478630" class="footer_link">
+                            Cliquez pour appeler
+                        </a>
+                    </li>
+
+                    <li class="contact_list">
+                        <i class="uil uil-envelope footer_button" ></i>
+                        <a href="mailto:aquasword60@icloud.com" class="footer_link">
+                            Tipampa.tipi@gmail.com
+                        </a>
+                    </li>
+
+                </div>
+
+                <div class="logo_footer">
+                    <a class="footer_logo">
+                        <img src="{{ asset('assets/images/tipampa_logo.png')}}" alt="">
+                    </a>
+                </div>
+
+                <div class="socials"> 
+                    <h1 class="subtext">Suivez nous sur nos différents réseaux !</h1>
+                    <div class="socials_list">
+                        <a href="">
+                            <i class="uil uil-facebook" target="_blank"></i>
+                        </a>
+                        <a href="" target="_blank">
+                            <i class="uil uil-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/tipampa_40/" target="_blank">
+                            <i class="uil uil-instagram-alt"></i>
+                        </a>
+                        <a href="https://www.booking.com/hotel/fr/tipampa.fr.html" target="_blank">
+                            <img src="{{ asset('assets/images/booking.png')}}" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border"></div>
+
+
+            <div class="legal">
+                <div class="legal_content">
+                    <a href="{{ path('mention') }}">Mentions légales</a>
+                    <a>Conditions générales</a>
+                    <a>Politique de protection des données personnelles</a>
+                    <a>Paiement sécurisé Labels et partenaires</a>
+                    <a>Gérez votre consentement</a>
+                <div>
+            </div>
+        </footer>
+
+        <!--====================================JS=======================================-->
+        <script src="{{ asset('assets/js/main.js')}}"></script>
     </body>
 </html>

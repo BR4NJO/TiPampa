@@ -1,0 +1,192 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/style/activities.css')}}" alt="">
+{% endblock %}
+
+{% block title %}Activités{% endblock %}
+
+{% block activities %}
+    <!--====================================TITRE ACTIVITES=======================================-->
+
+    <div class="activities_title">
+        <h1 class="activities_container">Les Activités</h1>
+    </div>
+
+    <!--====================================SOMMAIRE ACTIVITES=======================================-->
+
+    <div class="activities_summary">
+        <div class="activities_summary_part">
+            <a href="#TiPampaActivities">Activités proposé par TiPampa</a>
+        </div>
+
+        <div class="activities_summary_part">
+            <a href="#LandesActivities">Activités dans les landes</a>
+        </div>
+
+        <div class="activities_summary_part">
+            <a href="#RestaurantActivities">Les restaurants des Landes</a>
+        </div>
+
+    </div>
+
+    <!--====================================SOUS-TITRE ACTIVITES=======================================-->
+  
+    <section class="activities_content">
+        <div class="activities_title" id="TiPampaActivities">
+            <h2 class="activities_container">Les Activités proposé par TiPampa</h2>
+        </div>
+
+        <div class="activities_part">
+            <div class="activities_image">
+                <img src="{{ asset('assets/images/2020-05-chateau-de-gaujacq.jpg')}}" alt="">
+                <div class="activities_image_content">
+
+                    <h1>Le chateau de Gaujac</h1>
+
+                    <p>Situé sur les hauteurs de Gaujacq, village de Landes Chalosse face aux Pyrénées, le château de Gaujacq est une demeure seigneuriale érigée au XVIIe siècle par François de Sourdis
+                    , lieutenant général des armées du roi Louis XIV</p>
+
+                    <a href="http://chateau.de.gaujacq.free.fr/" target="_blank">Leur site Internet</a>
+
+                    <a href="https://www.google.fr/maps/dir/Chem.+de+Tuyerot,+40350+Pouillon/Ch%C3%A2teau+de+Gaujacq,+Route+de+Brassempouy,+Gaujacq/@43.6337385,-0.9023859,12.71z/data=!4m14!4m13!1m5!1m1!1s0xd56bcb8fead0a39:0xc44a4ef93d2eee79!2m2!1d-0.9654528!2d43.621135!1m5!1m1!1s0xd5690071d941963:0x49a0bc4b2c7829ed!2m2!1d-0.7594054!2d43.6328567!3e0?entry=ttu" target="_blank">Itinéraire</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="activities_part">
+            <div class="activities_image">
+                <img src="{{ asset('assets/images/golf-seignosse-aquitaine.jpg')}}" alt="">
+                <div class="activities_image_content">
+
+                    <h1>Le terrain de golf de Seignosse</h1>
+
+                    <p>Le Golf de Seignosse figure parmi les golfs des Landes en Nouvelle Aquitaine. Il est réputé pour être l’un des plus beaux golfs de la Côte Atlantique, son aspect technique et sportif ne vous laissera pas indifférent.</p>
+
+                    <a href="https://www.seignosse-golf.com/fr/" target="_blank">
+                        Leur site Internet
+                    </a>
+
+                    <a href="https://www.google.fr/maps/dir/Chem.+de+Tuyerot,+40350+Pouillon/Av.+du+Belv%C3%A9d%C3%A8re,+40510+Seignosse/@43.6451214,-1.3512054,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd56bcb8fead0a39:0xc44a4ef93d2eee79!2m2!1d-0.9654528!2d43.621135!1m5!1m1!1s0xd515bcb9279accf:0x74dba93a9baa2302!2m2!1d-1.408081!2d43.691043!3e0?entry=ttu" target="_blank">
+                        Itinéraire
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="activities_part">
+            <div class="activities_image">
+                <img src="{{ asset('assets/images/seb_chebassier_ESCF_H-2-1.jpg')}}" alt="">
+                <div class="activities_image_content">
+
+                    <h1>Cours de Surf Hossegor</h1>
+
+                    <p>Un réseau d'écoles de surf animées par des surfeurs passionnés.</p>
+
+                    <a href="https://ecoledesurf.com/ecoles/surf-hossegor/" target="_blank">
+                        Leur site Internet
+                    </a>
+
+                    <a href="https://www.google.fr/maps/dir/Chem.+de+Tuyerot,+40350+Pouillon/Plage+de+la+Gravi%C3%A8re,+40150+Soorts-Hossegor/@43.6451214,-1.3670278,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd56bcb8fead0a39:0xc44a4ef93d2eee79!2m2!1d-0.9654528!2d43.621135!1m5!1m1!1s0xd515b872cbede43:0xcd469132ad81b753!2m2!1d-1.44142!2d43.671703!3e0?entry=ttu" target="_blank">
+                        Itinéraire
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="activities_title" id="LandesActivities">
+            <h2 class="activities_container">Les Activités dans les landes</h2>
+        </div>
+
+        <div class="activities_part">
+            <div class="activities_image">
+                <img src="{{ asset('assets/images/cap_breton.jpg')}}" alt="">
+                <div class="activities_image_content">
+
+                    <h1>Office de tourisme Cap Breton</h1>
+
+
+                    <a href="https://www.capbreton-tourisme.com/" target="_blank">Leur site Internet</a>
+
+                    <a href="#LandesActivities" target="_blank">Itinéraire</a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="activities_part">
+            <div class="activities_image">
+                <img src="{{ asset('assets/images/plage-sud-d-hossegor.1614586.jpg')}}" alt="">
+                <div class="activities_image_content">
+
+                    <h1>Office de tourisme Hossegor</h1>
+
+                    <a href="https://www.hossegor.fr/fr" target="_blank">Leur site Internet</a>
+
+                    <a href="https://www.google.fr/maps/dir/Chem.+de+Tuyerot,+40350+Pouillon/166+Av.+de+la+Gare,+40150+Soorts-Hossegor/@43.6586725,-1.3472864,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd56bcb8fead0a39:0xc44a4ef93d2eee79!2m2!1d-0.9654528!2d43.621135!1m5!1m1!1s0xd515b7301d9c43b:0xb461daf9b5f1affc!2m2!1d-1.4262853!2d43.6599821!3e0?entry=ttu" target="_blank">Itinéraire</a>
+
+                </div>
+            </div>
+        </div>
+
+        
+
+    
+        <div class="activities_title" id="RestaurantActivities">
+            <h2 class="activities_container">Suggestions de restaurants dans les landes</h2>
+        </div>
+
+        <div class="activities_part">
+            <div class="activities_image">
+                <img src="{{ asset('assets/images/bistro_kantxa.jpeg')}}" alt="">
+                <div class="activities_image_content">
+
+                    <h1>Bistro Kantxa</h1>
+
+                    <p>Le Bistro “Kantxa" propose une cuisine du terroir en formules le midi et à la carte le soir. </p>
+
+                    <a href="https://bistro-kantxa.fr/" target="_blank">Leur site Internet</a>
+
+                    <a href="https://www.google.fr/maps/dir/Chem.+de+Tuyerot,+40350+Pouillon/22+Av.+nationale,+40230+Saint-Vincent-de-Tyrosse/@43.6450859,-1.2160141,12z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd56bcb8fead0a39:0xc44a4ef93d2eee79!2m2!1d-0.9654528!2d43.621135!1m5!1m1!1s0xd5151998529bc8b:0x1c644fcfc4519a3b!2m2!1d-1.3042039!2d43.66082!3e0?entry=ttu" target="_blank">Itinéraire</a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="activities_part">
+            <div class="activities_image">
+                <img src="{{ asset('assets/images/cafe_plage_hossegor.png')}}" alt="">
+                <div class="activities_image_content">
+
+                    <h1>Café de la plage</h1>
+
+                    <p>Idéalement situé sur la place Centrale, qui s'est refait une beauté en 2023, venez savourer une carte avec des plats, d'ici et d'ailleurs, faits maison avec des produits locaux et de saison.</p>
+
+                    <a href="https://www.cafe-de-la-plage-hossegor.fr/" target="_blank">
+                        Leur site Internet
+                    </a>
+
+                    <a href="https://www.google.fr/maps/dir/Chem.+de+Tuyerot,+40350+Pouillon/Pl.+des+Landais,+40150+Soorts-Hossegor/@43.6586725,-1.3555364,11z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0xd56bcb8fead0a39:0xc44a4ef93d2eee79!2m2!1d-0.9654528!2d43.621135!1m5!1m1!1s0xd515b7e108d2a3d:0x6d1ecfeb4c90cdeb!2m2!1d-1.4428859!2d43.662839!3e0?entry=ttu" target="_blank">
+                        Itinéraire
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    
+    <!--====================================JS=======================================-->
+    <script src="{{ asset('assets/js/main.js')}}"></script>
+
+{% endblock %}
